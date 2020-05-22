@@ -23,8 +23,62 @@
 
 <!-- main start-->
 <main class="page-content">
-<h1>Магазин готовых шаблонов</h1>
+<h1 class="section-header">Магазин готовых шаблонов</h1>
+<!-- main filter set start-->
+<section class="set-filter-page">
+<h2 class="section-header">Фильтр для выбора шаблонов</h2>
+<form id="set-properties-filtr" action="action/set_filter.php" method="get">
+
+<fieldset class="set-grid radio-set">
+<legend>Сетка:</legend>
+<ul class="set-grid-list">
+<li>
+<input id="adaptiv" type="radio" name="set-grid" value="adaptiv" checked>
+<label for="adaptiv">Адаптивная</label>
+</li>
+<li>
+<input id="fix" type="radio" name="set-grid" value="fix">
+<label for="fix">Фиксированная</label>
+</li>
+<li>
+<input id="flex" type="radio" name="set-grid" value="flex">
+<label for="flex">Резиновая</label>
+</li>
+</ul>
+</fieldset>
+
+<fieldset class="set-feature checkbox-set">
+<legend>Особенности:</legend>
+<ul class="set-grid-list">
+<li>
+<input id="slider" type="checkbox" name="set-feature" value="slider" checked>
+<label for="slider">Слайдер</label>
+</li>
+<li>
+<input id="avantages" type="checkbox" name="set-feature" value="block of avantages">
+<label for="avantages">Блок преимуществ</label>
+</li>
+<li>
+<input id="news" type="checkbox" name="set-feature" value="news" checked>
+<label for="news">Новости</label>
+</li>
+<li>
+<input id="gallery" type="checkbox" name="set-feature" value="gallery">
+<label for="gallery">Галерея</label>
+</li>
+<li>
+<input id="trash" type="checkbox" name="set-feature" value="trash">
+<label for="trash">Корзина</label>
+</li>
+</ul>
+</fieldset>
+<button type="submit" form="sbmt-properties-filtr" class="submit-filtr-btn">Показать</button>
+</form>
+</section>
+<!-- main filter set end-->
+
 <section class="catalog">
+<h2 class="section-header">Шаблоны</h2>
 <ul class="catalog-list">
 
   <li class="catalog-item">
@@ -38,42 +92,42 @@
   </li>
 
   <li class="catalog-item">
-  <img class="catalog-image" src="img/pink_2.png" width="358" height="576" alt="Шаблон Pink. Сайт для продажи мобильных приложений">
+  <img class="catalog-image" src="img/pink_2.png" width="358" height="576" alt="Шаблон Pink. Продуктовый лендинг приложения для iOS и Android">
   <div class="catalog-hover-info">
-  <p class="catalog-info">Сайт для продажи мобильных приложений</p>
+  <p class="catalog-info">Продуктовый лендинг приложения для iOS и Android</p>
   <a class="catalog-buy-btn">9 900 ₽</a>
 </div>
   </li>
 
 
   <li class="catalog-item">
-  <img class="catalog-image" src="img/barbershop_3.png" width="364" height="582" alt="Шаблон Borodiski. Сайт для оказания услуг барбершопа">
+  <img class="catalog-image" src="img/barbershop_3.png" width="364" height="582" alt="Шаблон Borodiski. Сайт салона красоты. Для мужчин, да.">
   <div class="catalog-hover-info">
-  <p class="catalog-info">Сайт для оказания услуг барбершопа</p>
+  <p class="catalog-info">Сайт салона красоты. Для мужчин, да.</p>
   <a class="catalog-buy-btn">9 900 ₽</a>
   </div>
   </li>
 
   <li class="catalog-item">
-  <img class="catalog-image" src="img/mishka_4.png" width="364" height="582" alt="Шаблон APlus. Сайт для продажи вязанных изделий">
+  <img class="catalog-image" src="img/mishka_4.png" width="364" height="582" alt="Шаблон APlus. Интернет-магазин вязаных игрушек">
   <div class="catalog-hover-info">
-  <p class="catalog-info">Сайт для продажи вязанных изделий</p>
+  <p class="catalog-info">Интернет-магазин вязаных игрушек</p>
   <a class="catalog-buy-btn">9 900 ₽</a>
   </div>
   </li>
 
   <li class="catalog-item">
-  <img class="catalog-image" src="img/aplus_5.png" width="364" height="582" alt="Шаблон APlus. Сайт для дистанционного обучения">
+  <img class="catalog-image" src="img/aplus_5.png" width="364" height="582" alt="Шаблон APlus. Лендинг курсов повышения квалификации">
   <div class="catalog-hover-info">
-  <p class="catalog-info">Сайт для дистанционного обучения</p>
+  <p class="catalog-info">Лендинг курсов повышения квалификации</p>
   <a class="catalog-buy-btn">9 900 ₽</a>
   </div>
   </li>
 
   <li class="catalog-item">
-  <img class="catalog-image" src="img/kvast_6.png" width="364" height="582" alt="Шаблон Kvast. Сайт для продажи прохладительных напитков">
+  <img class="catalog-image" src="img/kvast_6.png" width="364" height="582" alt="Шаблон Kvast. Промо-сайт производителя крафтового кваса">
   <div class="catalog-hover-info">
-  <p class="catalog-info">Сайт для продажи прохладительных напитков</p>
+  <p class="catalog-info">Промо-сайт производителя крафтового кваса</p>
   <a class="catalog-buy-btn">9 900 ₽</a>
   </div>
   </li>
@@ -91,8 +145,40 @@
 </main>
 <!-- main end-->
 
+
 <!-- footer start-->
 <footer class="page-footer">
+
+<!--footer feedback block start-->
+<section class="feedback">
+
+<div class="feedback-form-pop-up">
+<form id="pop-up-form" action="action/feedback_form_action.php" method="post">
+<fieldset>
+<legend>Напишите нам</legend>
+<ul class="form-fields">
+<li><label for="custom name">Ваше имя:</label></li>
+<li><input type="text" name="custom name" id="custom name" placeholder="Имя Фамилия" requered></li>
+<li><label for="custom mail">Ваш email:</label></li>
+<li><input type="text" name="custom mail" id="custom mail" placeholder="email@example.com" requered></li>
+<li><label for="custom message">Ваш текст</label></li>
+<li><textarea id="custom message" placeholder="В свободной форме"></textarea></li>
+<li><button class="sbmt-feedback-btn" type="submit" form="pop-up-form">Отправить</button></li>
+</ul>
+</fieldset>
+</form>
+</div>
+
+<div class="feedback-call">
+<p class="contacts">NЁRDS DESIGN STUDIO</br>
+<span class="contacts-info">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8  </span></br>
+<span class="contacts-number">тел. +7 (812) 275-75-75</span>
+</p>
+<button class="feedback-form-call">Напишите нам</button>
+</div>
+</section>
+<!--footer feedback block start-->
+
 <section class="map-location">
 <img src="img/map.png" width="1440" height="416" alt="карта. Расположение того, где мы находимся">
 </section>

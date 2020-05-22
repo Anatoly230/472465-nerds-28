@@ -24,7 +24,7 @@
 <!-- main start-->
 <main class="page-content">
 
-<h1>Нёрдс</h1>
+<h1 class="section-header">Нёрдс</h1>
 
 <!--main slider start-->
 <section class="main-slider">
@@ -74,7 +74,7 @@
 <!--main description start-->
 <section class="main-advantage description">
 
-  <h2>Перимущества нашей компании</h2>
+  <h2 class="section-header">Перимущества нашей компании</h2>
 
 <p>Мы — маленькая, но гордая </br>
 дизайн-студия из Краснодара.</br>
@@ -129,6 +129,37 @@
 
 <!-- footer start-->
 <footer class="page-footer">
+
+<!--footer feedback block start-->
+<section class="feedback">
+
+<div class="feedback-form-pop-up">
+<form id="pop-up-form" action="action/feedback_form_action.php" method="post">
+<fieldset>
+<legend>Напишите нам</legend>
+<ul class="form-fields">
+<li><label for="custom name">Ваше имя:</label></li>
+<li><input type="text" name="custom name" id="custom name" placeholder="Имя Фамилия" requered></li>
+<li><label for="custom mail">Ваш email:</label></li>
+<li><input type="text" name="custom mail" id="custom mail" placeholder="email@example.com" requered></li>
+<li><label for="custom message">Ваш текст</label></li>
+<li><textarea id="custom message" placeholder="В свободной форме"></textarea></li>
+<li><button type="submit" form="pop-up-form">Отправить</button></li>
+</ul>
+</fieldset>
+</form>
+</div>
+
+<div class="feedback-call">
+<p class="contacts">NЁRDS DESIGN STUDIO</br>
+<span class="contacts-info">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8  </span></br>
+<span class="contacts-number">тел. +7 (812) 275-75-75</span>
+</p>
+<button class="feedback-form-call">Напишите нам</button>
+</div>
+</section>
+<!--footer feedback block start-->
+
 <section class="map-location">
 <img src="img/map.png" width="1440" height="416" alt="карта. Расположение того, где мы находимся">
 </section>
