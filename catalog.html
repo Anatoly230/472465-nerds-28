@@ -23,10 +23,10 @@
 
 <!-- main start-->
 <main class="page-content">
-<h1 class="section-header">Магазин готовых шаблонов</h1>
+<h1 class="page-header">Магазин готовых шаблонов</h1>
 <!-- main filter set start-->
 <section class="set-filter-page">
-<h2 class="section-header">Фильтр для выбора шаблонов</h2>
+<h2 class="visually-hidden">Фильтр для выбора шаблонов</h2>
 <form id="set-properties-filtr" action="action/set_filter.php" method="get">
 
 <fieldset class="set-grid radio-set">
@@ -78,7 +78,7 @@
 <!-- main filter set end-->
 
 <section class="catalog">
-<h2 class="section-header">Шаблоны</h2>
+<h2 class="visually-hidden">Шаблоны</h2>
 <ul class="catalog-list">
 
   <li class="catalog-item">
@@ -150,25 +150,6 @@
 <footer class="page-footer">
 
 <!--footer feedback block start-->
-<section class="feedback">
-
-<div class="feedback-form-pop-up">
-<form id="pop-up-form" action="action/feedback_form_action.php" method="post">
-<fieldset>
-<legend>Напишите нам</legend>
-<ul class="form-fields">
-<li><label for="custom name">Ваше имя:</label></li>
-<li><input type="text" name="custom name" id="custom name" placeholder="Имя Фамилия" requered></li>
-<li><label for="custom mail">Ваш email:</label></li>
-<li><input type="text" name="custom mail" id="custom mail" placeholder="email@example.com" requered></li>
-<li><label for="custom message">Ваш текст</label></li>
-<li><textarea id="custom message" placeholder="В свободной форме"></textarea></li>
-<li><button class="sbmt-feedback-btn" type="submit" form="pop-up-form">Отправить</button></li>
-</ul>
-</fieldset>
-</form>
-</div>
-
 <div class="feedback-call">
 <p class="contacts">NЁRDS DESIGN STUDIO</br>
 <span class="contacts-info">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8  </span></br>
@@ -176,13 +157,13 @@
 </p>
 <button class="feedback-form-call">Напишите нам</button>
 </div>
-</section>
 <!--footer feedback block start-->
 
-<section class="map-location">
+<div class="map-location">
 <img src="img/map.png" width="1440" height="416" alt="карта. Расположение того, где мы находимся">
-</section>
+</div>
 <section class="footer-contacts">
+<h2 class="visually-hidden">Мы в социальных сетях</h2>
 <ul class="footer-social">
 <li class="social-vk"><a href="#">Вконтакте</a></li>
 <li class="social-fb"><a href="#">Фэйсбук</a></li>
@@ -195,6 +176,25 @@
 </section>
 </footer>
 <!--footer end-->
+
+<!--feedback pop up end-->
+<div class="feedback-form-pop-up visually-hidden">
+<form id="pop-up-form" action="action/feedback_form_action.php" method="post">
+<fieldset>
+<legend>Напишите нам</legend>
+<ul class="form-fields">
+<li><label for="custom name">Ваше имя:</label></li>
+<li><input type="text" name="custom name" id="custom name" placeholder="Имя Фамилия" requered></li>
+<li><label for="custom mail">Ваш email:</label></li>
+<li><input type="text" name="custom mail" id="custom mail" placeholder="email@example.com" requered></li>
+<li><label for="custom message">Ваш текст</label></li>
+<li><textarea id="custom message" placeholder="В свободной форме"></textarea></li>
+<li><button type="submit" form="pop-up-form">Отправить</button></li>
+</ul>
+</fieldset>
+</form>
+</div>
+<!--feedback pop up end-->
 
   </body>
 </html>
