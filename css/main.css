@@ -1,27 +1,84 @@
 
+/* roboto-100 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../fonts/roboto-v20-latin_cyrillic-100.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Thin'), local('Roboto-Thin'),
+  url('../fonts/roboto-v20-latin_cyrillic-100.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/roboto-v20-latin_cyrillic-100.woff') format('woff'), /* Modern Browsers */
+
+}
+
+/* roboto-300 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/roboto-v20-latin_cyrillic-300.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Light'), local('Roboto-Light'),
+  url('../fonts/roboto-v20-latin_cyrillic-300.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/roboto-v20-latin_cyrillic-300.woff') format('woff'), /* Modern Browsers */
+
+}
+
+/* roboto-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v20-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+  src: local('Roboto'), local('Roboto-Regular'),
+  url('../fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+}
+
+/* roboto-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-v20-latin_cyrillic-500.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+  url('../fonts/roboto-v20-latin_cyrillic-500.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/roboto-v20-latin_cyrillic-500.woff') format('woff'), /* Modern Browsers */
+
+}
+
+/* roboto-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v20-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+  url('../fonts/roboto-v20-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/roboto-v20-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+}
 
 /* basic variables */
 :root {
---base-white: #fff;
---base-dark: #283136;
---base-black: #000;
+  --base-white: #fff;
+  --base-dark: #283136;
+  --base-black: #000;
 
---red-base: #FB565A;
---red-hover: #E74246;
---red-active: #D7373B;
+  --red-base: #FB565A;
+  --red-hover: #E74246;
+  --red-active: #D7373B;
 
---green-base: #00CA74;
---green-hover: #00BC6C;
---green-active: #00AA62;
+  --green-base: #00CA74;
+  --green-hover: #00BC6C;
+  --green-active: #00AA62;
 
---yellow-base: #EFC84A;
---yellow-hover: #EAB534;
---yellow-active: #E5A722;
+  --yellow-base: #EFC84A;
+  --yellow-hover: #EAB534;
+  --yellow-active: #E5A722;
 
---grey-dark: #666666;
---grey-base: #EEEEEE;
---grey-hover: #DFDFDF;
---grey-active: #D5D5D5;
+  --grey-dark: #666666;
+  --grey-base: #EEEEEE;
+  --grey-hover: #DFDFDF;
+  --grey-active: #D5D5D5;
 }
 
 /* global */
@@ -36,13 +93,14 @@ body {
   color: var(--base-dark);
   background-color: var(--base-white);
 }
+
 a {
-text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-max-width: 100%;
-height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 *, *::before, *::after {
@@ -61,13 +119,17 @@ height: auto;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 /* page menu */
 .page-menu {
-font-size: 16px;
-line-height: 30px;
-list-style: none;
-background-color: transparent;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 30px;
+  list-style: none;
+  background-color: transparent;
 }
+
 /* user navigation */
 .page-menu a,
 .header-trsh-btn {
@@ -80,6 +142,7 @@ background-color: transparent;
 .header-trsh-btn:hover {
   color: var(--red-base);
 }
+
 .page-menu a:active,
 .header-trsh-btn:active {
   color: var(--grey-active);
@@ -87,6 +150,8 @@ background-color: transparent;
 
 /* main-advantage services */
 .services-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -98,13 +163,14 @@ background-color: transparent;
   text-transform: uppercase;
 }
 
-.services-item p {
+.services-item .main-services-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   text-align: left;
   color: var(--base-dark);
 }
+
 .services-item .buy-btn {
   color: var(--base-white);
   font-weight: 500;
@@ -116,10 +182,11 @@ background-color: transparent;
   background-color: var(--red-base);
 }
 
-.services-item .webs:hover{
+.services-item .webs:hover {
   background-color: var(--red-hover);
 }
-.services-item .webs:active{
+
+.services-item .webs:active {
   background-color: var(--red-active);
 }
 
@@ -127,10 +194,11 @@ background-color: transparent;
   background-color: var(--green-base);
 }
 
-.services-item .apps:hover{
+.services-item .apps:hover {
   background-color: var(--green-hover);
 }
-.services-item .apps:active{
+
+.services-item .apps:active {
   background-color: var(--green-active);
 }
 
@@ -138,38 +206,43 @@ background-color: transparent;
   background-color: var(--yellow-base);
 }
 
-.services-item .presentations:hover{
+.services-item .presentations:hover {
   background-color: var(--yellow-hover);
 }
-.services-item .presentations:active{
+.services-item .presentations:active {
   background-color: var(--yellow-active);
 }
 
 /* main-advantage description */
-.description .about-us{
+.description .about-us {
   display: inline-block;
   padding-bottom: 30px;
   color: var(--base-black);
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
-
 }
+
 .description p{
   color: var(--base-black);
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
 }
+
 .description .main-advantage-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
+
 .description .header-item {
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
 }
+
 /* indicators */
 .indicators-list caption {
   font-weight: 700;
@@ -186,6 +259,7 @@ background-color: transparent;
   text-transform: uppercase;
   text-align: center;
 }
+
 .indicators-list sup {
   font-size: 26px;
   line-height: 40px;
@@ -198,52 +272,62 @@ background-color: transparent;
   line-height: 18px;
   text-align: left;
 }
+
 /* main-partners */
 .main-partners .partners-list {
-list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 /* catalog page */
 .catalog .catalog-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
+
 .catalog-hover-info {
   width: 360px;
   background-color: var(--grey-base);
   font-weight: 400;
   color: var(--grey-dark);
 }
-.catalog-hover-info .block-info{
-display: block;
-width: 100%;
-text-align: center;
-font-size: 16px;
-line-height: 18px;
+
+.catalog-hover-info .block-info {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  line-height: 18px;
 }
+
 .catalog-hover-info .catalog-header {
   font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
   color: var(--base-black);
 }
+
 .catalog-hover-info .catalog-buy-btn {
-display:block;
-width: 200px;
-height: 50px;
-margin: 0 auto;
-border-radius: 3px;
-color: var(--base-white);
-background-color: var(--red-base);
-line-height: 50px;
-vertical-align: middle;
-text-align: center;
+  display:block;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 3px;
+  color: var(--base-white);
+  background-color: var(--red-base);
+  line-height: 50px;
+  vertical-align: middle;
+  text-align: center;
 }
 
 .catalog-hover-info .catalog-buy-btn:hover {
-background-color: var(--red-hover);
+  background-color: var(--red-hover);
 }
+
 .catalog-hover-info .catalog-buy-btn:active {
-background-color: var(--red-active);
+  background-color: var(--red-active);
 }
 
 /* change page block */
@@ -258,15 +342,17 @@ background-color: var(--red-active);
 .page-content .change-btn:hover {
   background-color: var(--grey-hover);
 }
+
 .page-content .change-btn:active {
   background-color: var(--grey-active);
 }
+
 .page-content .change-btn:visited {
   background-color: var(--base-vhite);
   outline: 3px solid var(--grey-base);
 }
-/* footer */
 
+/* footer */
 .feedback-call{
   font-weight: 400;
   font-size: 16px;
@@ -279,30 +365,36 @@ background-color: var(--red-active);
   text-align: left;
   text-transform: uppercase;
 }
+
 .feedback-call .contacts-info {
   line-height: 18px;
   color: var(--grey-dark);
 }
+
 .feedback-call .contacts-number {
   line-height: 18px;
   color: var(--grey-dark);
 }
+
 .feedback-call .feedback-form-call {
-color: var(--base-white);
-background-color: var(--red-base);
+  color: var(--base-white);
+  background-color: var(--red-base);
 }
 
-.feedback-call .feedback-form-call:hover{
+.feedback-call .feedback-form-call:hover {
   background-color: var(--red-hover);
 }
-.feedback-call .feedback-form-call:active{
+
+.feedback-call .feedback-form-call:active {
   background-color: var(--red-active);
 }
 
-
 .page-footer .footer-social {
-list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
+
 .page-footer .social a {
   color: var(--base-dark);
 }
@@ -313,20 +405,26 @@ list-style: none;
   line-height: 36px;
   text-align: left;
 }
+
 .footer-info .info-content {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   text-align: left;
 }
+
 /* pop-up */
 .feedback-form-pop-up legend {
   font-weight: 700;
   font-size: 45px;
 }
+
 .feedback-form-pop-up .form-fields {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
+
 .feedback-form-pop-up label {
   font-weight: 700;
   font-size: 18px;
@@ -337,10 +435,11 @@ list-style: none;
   color: var(--base-white);
 }
 
-.feedback-form-pop-up button:hover{
+.feedback-form-pop-up button:hover {
   background-color: var(--red-hover);
 }
-.feedback-form-pop-up button:active{
+
+.feedback-form-pop-up button:active {
   background-color: var(--red-active);
 }
 
@@ -350,22 +449,28 @@ list-style: none;
   font-size: 18px;
   text-transform: uppercase;
 }
+
 .set-filter-page label {
   font-weight: 400;
   font-size: 16px;
 }
-.set-filter-page .set-grid-list{
-list-style: none;
+
+.set-filter-page .set-grid-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
+
 .set-filter-page button {
   background-color: var(--grey-base);
   color: var(--base-black);
 }
 
-.set-filter-page button:hover{
+.set-filter-page button:hover {
   background-color: var(--grey-hover);
 }
-.set-filter-page button:active{
+
+.set-filter-page button:active {
   background-color: var(--grey-active);
   color: var(--grey-dark);
 }
