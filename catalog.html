@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>Каталог для выбора шаблонов</title>
+  <title>Передовой портал для выбора шаблона сайта. Нёрдс - выбери шаблон сайта для своего бизнеса</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
   <link href="normalize.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <link href="css/define_position_on_page.css" rel="stylesheet"> <!--Временные стили для определения позиции элемента на странице-->
 </head>
-<body>
+<body class="page-body">
 
   <!-- header start-->
   <header class="page-header">
-
+    <div class="main-header-wraper container">
     <a href="index.html" class="header-logo">
       <img src="img/nerds-logo.png" width="160" height="66" alt="логотип компании нёрдс">
     </a>
@@ -23,16 +24,19 @@
         <li><a href="#">Контакты</a></li>
       </ul>
       <div class="user-navigation">
-        <a class="header-trsh-btn"  href="#" >Корзина</a>
+        <a class="header-trash"  href="#" >Корзина</a>
       </div>
+    </div>
     </nav>
 
   </header>
   <!-- header end-->
 
+
   <!-- main start-->
   <main class="page-content">
     <h1 class="page-header">Магазин готовых шаблонов</h1>
+    <div class="main-catalog-wraper">
     <!-- main filter set start-->
     <section class="set-filter-page">
       <h2 class="visually-hidden">Фильтр для выбора шаблонов</h2>
@@ -81,7 +85,7 @@
             </li>
           </ul>
         </fieldset>
-        <button type="submit" form="sbmt-properties-filtr" class="submit-filtr-btn">Показать</button>
+        <button class="filter-it btn" type="submit" form="sbmt-properties-filtr" class="submit-filtr-btn">Показать</button>
       </form>
     </section>
     <!-- main filter set end-->
@@ -91,130 +95,138 @@
       <ul class="catalog-list">
 
         <li class="catalog-item">
+          <img class="catalog-image image-hover" src="img/svg/browser.svg" width="360" height="40" alt="имитация браузера">
           <img class="catalog-image" src="img/sedona_1.png" width="360" height="576" alt="Шаблон Sedona. Информационный сайт для туристов">
             <div class="catalog-hover-info">
-              <p><span class="block-info catalog-header">Sedona</span>
-              <span class="block-info catalog-info">Информационный сайт <br>для туристов</span></p>
-              <a class="catalog-buy-btn">9 900 ₽</a>
+              <p class="catalog-header">Sedona</p>
+              <p class="catalog-info">Информационный сайт <br>для туристов</p>
+              <a class="catalog-buy btn">9 900 ₽</a>
           </div>
 
         </li>
 
         <li class="catalog-item">
-          <img class="catalog-image" src="img/pink_2.png" width="358" height="576" alt="Шаблон Pink. Продуктовый лендинг приложения для iOS и Android">
+            <img class="catalog-image image-hover" src="img/svg/browser.svg" width="360" height="40" alt="имитация браузера">
+          <img class="catalog-image" src="img/pink_2.png" width="360" height="576" alt="Шаблон Pink. Продуктовый лендинг приложения для iOS и Android">
           <div class="catalog-hover-info">
-            <p><span class="block-info catalog-header">Pink app</span>
-            <span class="block-info catalog-info">Продуктовый лендинг приложения<br>для iOS и Android</span></p>
-            <a class="catalog-buy-btn">9 900 ₽</a>
+            <p class="catalog-header">Pink app</p>
+            <p class="catalog-info">Продуктовый лендинг приложения<br>для iOS и Android</p>
+            <a class="catalog-buy btn">9 900 ₽</a>
           </div>
         </li>
 
 
         <li class="catalog-item">
-          <img class="catalog-image" src="img/barbershop_3.png" width="364" height="582" alt="Шаблон Borodiski. Сайт салона красоты. Для мужчин, да.">
+          <img class="catalog-image image-hover" src="img/svg/browser.svg" width="360" height="40" alt="имитация браузера">
+          <img class="catalog-image" src="img/barbershop_3.png" width="360" height="576" alt="Шаблон Borodiski. Сайт салона красоты. Для мужчин, да.">
           <div class="catalog-hover-info">
-            <p><span class="block-info catalog-header">Barbershop</span>
-            <span class="block-info catalog-info">Сайт салона красоты. <br>Для мужчин, да.</span></p>
-            <a class="catalog-buy-btn">9 900 ₽</a>
+            <p class="catalog-header">Barbershop</p>
+            <p class="catalog-info">Сайт салона красоты. <br>Для мужчин, да.</p>
+            <a class="catalog-buy btn">9 900 ₽</a>
           </div>
         </li>
 
         <li class="catalog-item">
-          <img class="catalog-image" src="img/mishka_4.png" width="364" height="582" alt="Шаблон APlus. Интернет-магазин вязаных игрушек">
+          <img class="catalog-image image-hover" src="img/svg/browser.svg" width="360" height="40" alt="имитация браузера">
+          <img class="catalog-image" src="img/mishka_4.png" width="360" height="576" alt="Шаблон APlus. Интернет-магазин вязаных игрушек">
           <div class="catalog-hover-info">
-
-            <p><span class="block-info catalog-header">Mishka</span>
-            <span class="block-info catalog-info">Интернет-магазин <br>вязаных игрушек</span></p>
-            <a class="catalog-buy-btn">9 900 ₽</a>
+            <p class="catalog-header">Mishka</p>
+            <p class="catalog-info">Интернет-магазин <br>вязаных игрушек</p>
+            <a class="catalog-buy btn">9 900 ₽</a>
           </div>
         </li>
 
         <li class="catalog-item">
-          <img class="catalog-image" src="img/aplus_5.png" width="364" height="582" alt="Шаблон APlus. Лендинг курсов повышения квалификации">
+          <img class="catalog-image image-hover" src="img/svg/browser.svg" width="360" height="40" alt="имитация браузера">
+          <img class="catalog-image" src="img/aplus_5.png" width="360" height="576" alt="Шаблон APlus. Лендинг курсов повышения квалификации">
           <div class="catalog-hover-info">
-            <p><span class="block-info catalog-header">A plus</span>
-            <span class="block-info catalog-info">Лендинг курсов повышения<br>квалификации</span></p>
-            <a class="catalog-buy-btn">9 900 ₽</a>
+            <p class="catalog-header">A plus</p>
+            <p class="catalog-info">Лендинг курсов повышения<br>квалификации</p>
+            <a class="catalog-buy btn">9 900 ₽</a>
           </div>
         </li>
 
         <li class="catalog-item">
-          <img class="catalog-image" src="img/kvast_6.png" width="364" height="582" alt="Шаблон Kvast. Промо-сайт производителя крафтового кваса">
+          <img class="catalog-image image-hover" src="img/svg/browser.svg" width="360" height="40" alt="имитация браузера">
+          <img class="catalog-image" src="img/kvast_6.png" width="360" height="576" alt="Шаблон Kvast. Промо-сайт производителя крафтового кваса">
           <div class="catalog-hover-info">
-            <p><span class="block-info catalog-header">Кваст</span>
-            <span class="block-info catalog-info">Промо-сайт производителя <br>крафтового кваса</span></p>
-            <a class="catalog-buy-btn">9 900 ₽</a>
+            <p class="catalog-header">Кваст</p>
+            <p class="catalog-info">Промо-сайт производителя <br>крафтового кваса</p>
+            <a class="catalog-buy btn">9 900 ₽</a>
           </div>
         </li>
 
       </ul>
     </section>
 
-    <div class="change-page">
-      <a class="change-btn" href="#">1</a>
-      <a class="change-btn" href="#">2</a>
-      <a class="change-btn" href="#">3</a>
-      <a class="change-btn" href="#">Следующая</a>
+    <div class="change-page-block">
+      <a class="change-page btn" href="#">1</a>
+      <a class="change-page btn" href="#">2</a>
+      <a class="change-page btn" href="#">3</a>
+      <a class="change-page btn" href="#">Следующая</a>
     </div>
-
+  </div>
   </main>
   <!-- main end-->
 
-  <!-- footer start-->
-  <footer class="page-footer">
 
-    <!--footer feedback block start-->
-    <div class="feedback-call">
-      <p><span class="feedback-header">NЁRDS DESIGN STUDIO</span><br>
-        <span class="contacts-info">191186, Санкт-Петербург<br>, ул. Б. Конюшенная, д. 19/8  </span><br>
-        <a class="contacts-number" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-      </p>
-      <a class="feedback-form-call" href="#" >Напишите нам</a>
-    </div>
-    <!--footer feedback block start-->
+                  <!-- footer start-->
+                  <footer class="page-footer">
 
-    <div class="map-location">
-      <img src="img/map.png" width="1440" height="416" alt="карта. Расположение того, где мы находимся">
-    </div>
-    <section class="footer-contacts">
-      <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <ul class="footer-social">
-        <li class="social vk"><a href="#">Вконтакте</a></li>
-        <li class="social fb"><a href="#">Фэйсбук</a></li>
-        <li class="social ig"><a href="#">Инстаграмм</a></li>
-      </ul>
-      <dl class="footer-info">
-        <dt class="info-header">Давайте дружить, это выгодно!</dt>
-        <dd class="info-content">Скидка 10% для друзей из социальных сетей.</dd>
-      </dl>
-    </section>
+                    <!--footer feedback block start-->
+                    <div class="feedback-call">
+                      <p class="feedback-header">NЁRDS DESIGN STUDIO</p>
+                        <p class="contacts-info">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8  </p>
+                        <a class="contacts-number" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+                      <a class="feedback-form-call btn" href="#" >Напишите нам</a>
+                    </div>
+                    <!--footer feedback block start-->
 
-  </footer>
-  <!--footer end-->
 
-  <!--feedback pop up end-->
-  <div class="feedback-form-pop-up ">
-    <form id="pop-up-form" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset>
-        <legend>Напишите нам</legend>
-        <ul class="form-fields">
-          <li>
-            <label for="custom name">Ваше имя:</label>
-            <input type="text" name="custom name" id="custom name" placeholder="Имя Фамилия" requered>
-          </li>
-          <li>
-            <label for="custom mail">Ваш email:</label>
-            <input type="text" name="custom mail" id="custom mail" placeholder="email@example.com" requered>
-          </li>
-          <li>
-            <label for="custom message">Ваш текст</label>
-            <textarea id="custom message" placeholder="В свободной форме"></textarea>
-          </li>
-          <li><button type="submit" form="pop-up-form">Отправить</button></li>
-        </ul>
-      </fieldset>
-    </form>
-  </div>
-  <!--feedback pop up end-->
+                    <section class="footer-contacts">
+                      <h2 class="visually-hidden">Мы в социальных сетях</h2>
+                      <div class="map-location">
+                        <img src="img/map.png" width="1440" height="416" alt="карта. Расположение того, где мы находимся">
+                      </div>
+                      <div class="social-wraper">
+                      <ul class="footer-social">
+                        <li class="social vk"><a href="#"></a></li>
+                        <li class="social fb"><a href="#"></a></li>
+                        <li class="social ig"><a href="#"></a></li>
+                      </ul>
+                      <dl class="footer-info">
+                        <dt class="info-header">Давайте дружить, это выгодно!</dt>
+                        <dd class="info-content">Скидка 10% для друзей из социальных сетей.</dd>
+                      </dl>
+                    </div>
+                    </section>
+
+                  </footer>
+                  <!--footer end-->
+
+                  <!--feedback pop up end-->
+                  <div class="feedback-form-pop-up visually-hidden">
+                    <form id="pop-up-form" action="https://echo.htmlacademy.ru" method="post">
+                      <fieldset>
+                        <legend>Напишите нам</legend>
+                        <ul class="form-fields">
+                          <li>
+                            <label for="custom name">Ваше имя:</label>
+                            <input type="text" name="custom name" id="custom name" placeholder="Имя Фамилия" requered>
+                          </li>
+                          <li>
+                            <label for="custom mail">Ваш email:</label>
+                            <input type="text" name="custom mail" id="custom mail" placeholder="email@example.com" requered>
+                          </li>
+                          <li>
+                            <label for="custom message">Ваш текст</label>
+                            <textarea id="custom message" placeholder="В свободной форме"></textarea>
+                          </li>
+                          <li><button class="send btn" type="submit" form="pop-up-form">Отправить</button></li>
+                        </ul>
+                      </fieldset>
+                    </form>
+                  </div>
+                  <!--feedback pop up end-->
 </body>
 </html>
