@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Передовой портал для выбора шаблона сайта. Нёрдс - выбери шаблон сайта для своего бизнеса</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
-  <link href="normalize.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="css/define_position_on_page.css" rel="stylesheet"> <!--Временные стили для определения позиции элемента на странице-->
 </head>
@@ -18,7 +18,7 @@
     </a>
     <nav class="page-nav">
       <ul class="page-menu">
-        <li><a href="#">Студия</a></li>
+        <li><a class="current-page" href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
         <li><a href="catalog.html">Магазины</a></li>
         <li><a href="#">Контакты</a></li>
@@ -166,36 +166,39 @@
                 </main>
                 <!-- main end-->
 
+
                 <!-- footer start-->
                 <footer class="page-footer">
 
-                  <div class="map-location">
-                    <img src="img/map.png" width="100%" height="auto" alt="карта. Расположение того, где мы находимся">
-                    <div class="container test">
-                    <!--footer feedback block start-->
-                    <div class="feedback-call">
-                      <p class="feedback-header">NЁRDS DESIGN STUDIO</p>
-                        <p class="contacts-info">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8  </p>
-                        <a class="contacts-number" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-                      <a class="feedback-form-call btn" href="#" >Напишите нам</a>
-                    </div>
-                    <!--footer feedback block start-->
+                  <div class="map-location" >
+              <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412417!2d30.32089461626306!3d59.93879686904761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1592047226377!5m2!1sru!2sru"frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+                <div class="container feedback-call-wrap">
+                  <!--footer feedback block start-->
+                  <div class="feedback-call">
+                    <p class="feedback-header">NЁRDS DESIGN STUDIO</p>
+                    <p class="contacts-info">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8  </p>
+                    <a class="contacts-number" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+                    <a class="feedback-form-call btn" href="#" >Напишите нам</a>
                   </div>
+                  <!--footer feedback block start-->
+                </div>
+              </iframe>
                   </div>
 
                   <section class="container">
                     <h2 class="visually-hidden">Мы в социальных сетях</h2>
                     <div class="social-wraper">
-                    <ul class="footer-social">
-                      <li class="social vk"><a href="#"></a></li>
-                      <li class="social fb"><a href="#"></a></li>
-                      <li class="social ig"><a href="#"></a></li>
-                    </ul>
-                    <dl class="footer-info">
-                      <dt class="info-header">Давайте дружить, это выгодно!</dt>
-                      <dd class="info-content">Скидка 10% для друзей из социальных сетей.</dd>
-                    </dl>
-                  </div>
+                      <ul class="footer-social">
+                        <li class="social vk"><a href="#"></a></li>
+                        <li class="social fb"><a href="#"></a></li>
+                        <li class="social ig"><a href="#"></a></li>
+                      </ul>
+                      <dl class="footer-info">
+                        <dt class="info-header">Давайте дружить, это выгодно!</dt>
+                        <dd class="info-content">Скидка 10% для друзей из социальных сетей.</dd>
+                      </dl>
+                    </div>
                   </section>
 
                 </footer>
@@ -209,15 +212,15 @@
                       <ul class="form-fields">
                         <li>
                           <label for="custom name">Ваше имя:</label>
-                          <input type="text" name="custom name" id="custom name" placeholder="Имя Фамилия" requered>
+                          <input class="input-value"  type="text" name="custom name" id="custom name" placeholder="Имя Фамилия" requered>
                         </li>
                         <li>
                           <label for="custom mail">Ваш email:</label>
-                          <input type="text" name="custom mail" id="custom mail" placeholder="email@example.com" requered>
+                          <input class="input-value"  type="text" name="custom mail" id="custom mail" placeholder="email@example.com" requered>
                         </li>
                         <li class="message-field">
                           <label for="custom message">Текст в письме</label>
-                          <textarea id="custom message" placeholder="В свободной форме"></textarea>
+                          <textarea  class="input-value" id="custom message" name="message" placeholder="В свободной форме"></textarea>
                         </li>
                         <li><button class="send btn" type="submit" form="pop-up-form">Отправить</button></li>
                       </ul>
@@ -226,5 +229,6 @@
               <button class="close-btn" type="button" aria-label="закрыть"></button>
                 </div>
                 <!--feedback pop up end-->
+
                 </body>
                 </html>
