@@ -784,7 +784,7 @@ img {
   font-weight: 400;
   background-color: var(--grey-base);
   color: var(--grey-dark);
-
+  opacity: 0;
 }
 
 .catalog-item:hover .catalog-hover-info {
