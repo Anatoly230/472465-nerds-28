@@ -898,7 +898,8 @@ img {
 .page-footer .map-iframe {
   width: 100%;
   height: 415px;
-  margin: -8px;
+  margin-top: -8px;
+  margin-bottom: -8px;
   border: none;
 }
 
@@ -1086,6 +1087,13 @@ img {
   padding-top: 63px;
   padding-left: 100px;
   background-color: var(--base-white);
+}
+.close-pop-up {
+  display: none;
+}
+
+.open-pop-up {
+  display: block;
 }
 
 .feedback-form-pop-up .pop-up-fields {
