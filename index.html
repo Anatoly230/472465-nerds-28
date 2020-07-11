@@ -10,18 +10,25 @@
 </head>
 
 <body class="page-body">
-
   <header class="page-header">
     <div class="main-header-wraper container">
-      <a href="#" class="header-logo">
-        <img src="img/nerds-logo.png" width="160" height="66" alt="логотип компании нёрдс">
+      <a class="header-logo">
+        <img src="img/nerds-logo.png" width="160" height="66" alt="Логотип компании нёрдс">
       </a>
       <nav class="page-nav">
         <ul class="page-menu">
-          <li><a class="current-page" href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li tabindex="0">
+            <a href="index.html">Студия</a>
+          </li>
+          <li tabindex="0">
+            <a href="#">Клиенты</a>
+          </li>
+          <li tabindex="0">
+            <a href="catalog.html">Магазин</a>
+          </li>
+          <li tabindex="0">
+            <a href="#">Контакты</a>
+          </li>
         </ul>
         <div class="user-navigation">
           <a class="header-trash" href="#">Корзина</a>
@@ -29,16 +36,15 @@
       </nav>
     </div>
   </header>
-
   <main class="page-content">
     <h1 class="visually-hidden">Нёрдс</h1>
     <section class="main-slider">
       <h2 class="visually-hidden">Слайдер с горячими предложениями</h2>
-      <ul class="slider-wraper-list slider-wraper-3 container">
-        <li class="slider-item">
+      <ul class="slider-wraper-list slider-wraper-1 container">
+        <li class="slider-item current-slide">
           <dl class="slider-slogan">
-            <dt class="slogan-header">Долго, дорого,<br>скурпулёзно </dt>
-            <dd class="slogan-content">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.
+            <dt class="slogan-header ">Долго, дорого,<br>скрупулезно.</dt>
+            <dd class="slogan-content">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.
             </dd>
           </dl>
           <a class="slider-more btn" href="#">Узнать больше</a>
@@ -51,7 +57,7 @@
           </dl>
           <a class="slider-more btn" href="#">Узнать больше</a>
         </li>
-        <li class="slider-item current-slide">
+        <li class="slider-item">
           <dl class="slider-slogan">
             <dt class="slogan-header">Только ночь,<br>только хардкор</dt>
             <dd class="slogan-content">Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.
@@ -68,9 +74,7 @@
         </li>
       </ul>
     </section>
-
     <div class="main-wraper container">
-
       <section class="main-advantage services">
         <h2 class="visually-hidden">Наши преимущества</h2>
         <ul class="services-list">
@@ -81,7 +85,6 @@
               после того как увидит ваш сайт!</p>
             <a class="buy webs btn " href="#">Заказать</a>
           </li>
-
           <li class="services-item services-apps">
             <img src="img/services_2.png" width="300" height="146" alt="Изображение категории">
             <h3 class="main-services-header">Приложения</h3>
@@ -89,7 +92,6 @@
               AppStore и Google Play!</p>
             <a class="buy apps btn " href="#">Заказать</a>
           </li>
-
           <li class="services-item services-presentations">
             <img src="img/services_3.png" width="300" height="146" alt="Изображение категории">
             <h3 class="main-services-header">Презентации</h3>
@@ -97,52 +99,39 @@
               насколько вы изумительны!</p>
             <a class="buy presentations btn" href="#">Заказать</a>
           </li>
-
         </ul>
-
       </section>
-
       <div class="description-indicators-wraper">
         <section class="main-advantage description">
-
           <h2 class="visually-hidden">Перимущества нашей компании</h2>
-
           <p class="about-us-header">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
           <p class="about-us-content">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
             превыше креатива. Работаем не покладая рук, как роботы.</p>
-
           <ul class="main-advantage-list">
             <li class="header-item">Выполняем заказы на разработку:</li>
-            <li>Веб-сайтов любой сложности  </li>
-            <li>Мобильных приложений для iOS и Android  </li>
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
             <li>Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
-
         </section>
-
         <section class="main-advantage indicators">
           <h2 class="visually-hidden">Достижения нашей компании</h2>
           <img src="img/indicators_logo.png" width="360" height="208" alt="Лого Нёрдс">
           <table class="indicators-list">
             <caption>с 2004 года Любим точность во всем:</caption>
-
-            <tr>
+            <tr class="list-header">
               <th>146<sup>%</sup></th>
               <th>100<sup>%</sup></th>
               <th>50<sup>%</sup></th>
             </tr>
-
-            <tr>
-              <td>Уровень  самоотдачи</td>
+            <tr class="list-data">
+              <td>Уровень самоотдачи</td>
               <td>Соблюдение сроков</td>
               <td>Минимальная предоплата</td>
             </tr>
-
           </table>
-
         </section>
       </div>
-
       <section class="main-partners">
         <h2 class="visually-hidden">Партнёры нашей компании</h2>
         <ul class="partners-list">
@@ -167,34 +156,33 @@
           </li>
         </ul>
       </section>
-
     </div>
   </main>
-
   <footer class="page-footer">
-
     <div class="map-location">
       <iframe class="map-iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa229b84eeddeccee6f63ae7c0e980bdbd6ffe06c9e4dd75a64b594db324dc15f&amp;source=constructor" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-
       <div class="container feedback-call-wrap">
-
         <div class="feedback-call">
           <p class="feedback-header">NЁRDS DESIGN STUDIO</p>
-          <p class="contacts-info">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8  </p>
+          <p class="contacts-info">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 &nbsp;</p>
           <a class="contacts-number" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
           <a class="feedback-form-call btn" href="#">Напишите нам</a>
         </div>
-
       </div>
     </div>
-
     <section class="container">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <div class="social-wraper">
         <ul class="footer-social">
-          <li class="social vk"><a href="#"></a></li>
-          <li class="social fb"><a href="#"></a></li>
-          <li class="social ig"><a href="#"></a></li>
+          <li class="social vk">
+            <a href="#"></a>
+          </li>
+          <li class="social fb">
+            <a href="#"></a>
+          </li>
+          <li class="social ig">
+            <a href="#"></a>
+          </li>
         </ul>
         <dl class="footer-info">
           <dt class="info-header">Давайте дружить, это выгодно!</dt>
@@ -202,9 +190,7 @@
         </dl>
       </div>
     </section>
-
   </footer>
-
   <div class="feedback-form-pop-up ">
     <form class="pop-up-form" id="pop-up-form" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="pop-up-fields">
@@ -228,8 +214,7 @@
     </form>
     <button class="close-btn" type="button" aria-label="закрыть"></button>
   </div>
-
-  <script src="js/pop-up.js"></script>
+  <script src="js/min-pop-up.js"></script>
 </body>
 
 </html>
