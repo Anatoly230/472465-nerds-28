@@ -6,32 +6,32 @@
   <title>Передовой портал для выбора шаблона сайта. Нёрдс - выбери шаблон сайта для своего бизнеса</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
+  <link href="css/min.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
   <header class="page-header">
     <div class="main-header-wraper container">
       <a href="index.html" class="header-logo">
-        <img src="img/nerds-logo.png" width="160" height="66" alt="Логотип компании нёрдс">
+        <img src="img/nerds_logo.png" width="160" height="66" alt="Логотип компании нёрдс">
       </a>
       <nav class="page-nav">
         <ul class="page-menu">
           <li tabindex="0">
-            <a href="index.html">Студия</a>
+            <a href="index.html" aria-label="Пункт меню студия">Студия</a>
           </li>
           <li tabindex="0">
-            <a href="#">Клиенты</a>
+            <a href="#" aria-label="Пункт меню Клиенты">Клиенты</a>
           </li>
           <li tabindex="0">
-            <a class="current-page" href="catalog.html">Магазин</a>
+            <a href="catalog.html" aria-label="Пункт меню Магазин">Магазин</a>
           </li>
           <li tabindex="0">
-            <a href="#">Контакты</a>
+            <a href="#" aria-label="Пункт меню Контакты">Контакты</a>
           </li>
         </ul>
         <div class="user-navigation">
-          <a class="header-trash" href="#">Корзина</a>
+          <a class="header-trash" href="#" aria-label="Пункт меню Корзина">Корзина</a>
         </div>
       </nav>
     </div>
@@ -74,7 +74,7 @@
                 <label for="fix" tabindex="0">Фиксированная</label>
               </li>
               <li class="setting-item">
-                <input class="blocked" id="flex" type="radio" name="set-grid" value="flex">
+                <input id="flex" type="radio" name="set-grid" value="flex" disabled>
                 <label for="flex" tabindex="0">Резиновая</label>
               </li>
             </ul>
@@ -83,7 +83,7 @@
             <legend>Особенности:</legend>
             <ul class="setting-list">
               <li class="setting-item">
-                <input id="slider" type="checkbox" name="set-feature" value="slider" checked>
+                <input id="slider" type="checkbox" name="set-feature" value="slider" checked aria-label="Макет со слайдером">
                 <label for="slider" tabindex="0">Слайдер</label>
               </li>
               <li class="setting-item">
@@ -122,9 +122,9 @@
           </div>
         </div>
         <ul class="catalog-list">
-          <li class="catalog-item">
+          <li class="catalog-item" tabindex="0">
             <div class="catalog-wraper">
-              <img class="catalog-image" src="img/sedona_1.png" width="360" height="auto" alt="Шаблон Sedona. Информационный сайт для туристов">
+              <img class="catalog-image" src="img/sedona_1.png" width="360" height="576" alt="Шаблон Sedona. Информационный сайт для туристов">
               <div class="catalog-hover-info">
                 <a class="catalog-card-header" href="#">Sedona</a>
                 <p class="catalog-card-info">Информационный сайт для туристов</p>
@@ -132,75 +132,75 @@
               </div>
             </div>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item" tabindex="0">
             <div class="catalog-wraper">
               <img class="catalog-image" src="img/pink_2.png" width="360" height="576" alt="Шаблон Pink. Продуктовый лендинг приложения для iOS и Android">
               <div class="catalog-hover-info">
-                <a class="catalog-card-header">Pink app</a>
+                <a class="catalog-card-header" aria-label="Перейти, чтобы посмотреть макет Sedona">Pink app</a>
                 <p class="catalog-card-info">Продуктовый лендинг приложения для iOS и Android</p>
-                <a class="catalog-card-buy btn">9 900 ₽</a>
+                <a class="catalog-card-buy btn" aria-label="Перейти, чтобы заказать макет Sedona">9 900 ₽</a>
               </div>
             </div>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item" tabindex="0">
             <div class="catalog-wraper">
               <img class="catalog-image" src="img/barbershop_3.png" width="360" height="576" alt="Шаблон Borodiski. Сайт салона красоты. Для мужчин, да.">
               <div class="catalog-hover-info">
-                <a class="catalog-card-header">Barbershop</a>
+                <a class="catalog-card-header" aria-label="Перейти, чтобы посмотреть макет Barbershop">Barbershop</a>
                 <p class="catalog-card-info">Сайт салона красоты. Для мужчин, да.</p>
-                <a class="catalog-card-buy btn">9 900 ₽</a>
+                <a class="catalog-card-buy btn" aria-label="Перейти, чтобы заказать макет Barbershop">9 900 ₽</a>
               </div>
             </div>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item" tabindex="0">
             <div class="catalog-wraper">
               <img class="catalog-image" src="img/mishka_4.png" width="360" height="576" alt="Шаблон APlus. Интернет-магазин вязаных игрушек">
               <div class="catalog-hover-info">
-                <a class="catalog-card-header">Mishka</a>
+                <a class="catalog-card-header" aria-label="Перейти, чтобы посмотреть макет Mishka">Mishka</a>
                 <p class="catalog-card-info">Интернет-магазин вязаных игрушек</p>
-                <a class="catalog-card-buy btn">9 900 ₽</a>
+                <a class="catalog-card-buy btn" aria-label="Перейти, чтобы заказать макет Mishka">9 900 ₽</a>
               </div>
             </div>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item" tabindex="0">
             <div class="catalog-wraper">
               <img class="catalog-image" src="img/aplus_5.png" width="360" height="576" alt="Шаблон APlus. Лендинг курсов повышения квалификации">
               <div class="catalog-hover-info">
-                <a class="catalog-card-header">A plus</a>
+                <a class="catalog-card-header" aria-label="Перейти, чтобы посмотреть макет A plus">A plus</a>
                 <p class="catalog-card-info">Лендинг курсов повышения квалификации</p>
-                <a class="catalog-card-buy btn">9 900 ₽</a>
+                <a class="catalog-card-buy btn" aria-label="Перейти, чтобы заказать макет A plus">9 900 ₽</a>
               </div>
             </div>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item" tabindex="0">
             <div class="catalog-wraper">
               <img class="catalog-image" src="img/kvast_6.png" width="360" height="576" alt="Шаблон Kvast. Промо-сайт производителя крафтового кваса">
               <div class="catalog-hover-info">
-                <a class="catalog-card-header">Кваст</a>
+                <a class="catalog-card-header" aria-label="Перейти, чтобы плсмотреть макет Кваст">Кваст</a>
                 <p class="catalog-card-info">Промо-сайт производителя крафтового кваса</p>
-                <a class="catalog-card-buy btn">9 900 ₽</a>
+                <a class="catalog-card-buy btn" aria-label="Перейти, чтобы заказать макет Кваст">9 900 ₽</a>
               </div>
             </div>
           </li>
         </ul>
       </section>
       <div class="change-page-block">
-        <a class="change-page btn current-page" href="#" tabindex="0">1</a>
-        <a class="change-page btn" href="#">2</a>
-        <a class="change-page btn" href="#">3</a>
-        <a class="change-page btn" href="#">Следующая</a>
+        <a class="change-page btn current-page" href="#" tabindex="0" aria-label="Текущая страница">1</a>
+        <a class="change-page btn" href="#" aria-label="Смена страницы">2</a>
+        <a class="change-page btn" href="#" aria-label="Смена страницы">3</a>
+        <a class="change-page btn" href="#" aria-label="Следующая страница">Следующая</a>
       </div>
     </div>
   </main>
   <footer class="page-footer">
     <div class="map-location">
-      <iframe class="map-iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa229b84eeddeccee6f63ae7c0e980bdbd6ffe06c9e4dd75a64b594db324dc15f&amp;source=constructor" allowfullscreen="" aria-hidden="false"></iframe>
+      <iframe class="map-iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa229b84eeddeccee6f63ae7c0e980bdbd6ffe06c9e4dd75a64b594db324dc15f&amp;source=constructor" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       <div class="container feedback-call-wrap">
         <div class="feedback-call">
           <p class="feedback-header">NЁRDS DESIGN STUDIO</p>
           <p class="contacts-info">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 &nbsp;</p>
           <a class="contacts-number" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-          <a class="feedback-form-call btn" href="#" tabindex="0">Напишите нам</a>
+          <a class="feedback-form-call btn" href="#" aria-label="Напишите нам письмо">Напишите нам</a>
         </div>
       </div>
     </div>
@@ -208,14 +208,14 @@
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <div class="social-wraper">
         <ul class="footer-social">
-          <li class="social vk" tabindex="0" title="Мы во Вконтакте">
-            <a href="#"></a>
+          <li class="social vk">
+            <a href="#" aria-label="Мы в социальной сети Вконтакте"></a>
           </li>
-          <li class="social fb" tabindex="0" title="Мы на Фейсбук">
-            <a href="#"></a>
+          <li class="social fb">
+            <a href="#" aria-label="Мы в социальной сети Facebook"></a>
           </li>
-          <li class="social ig" tabindex="0" title="Мы в Инстаграмм">
-            <a href="#"></a>
+          <li class="social ig">
+            <a href="#" aria-label="Мы на фотолощадке в Instagram"></a>
           </li>
         </ul>
         <dl class="footer-info">
@@ -232,15 +232,15 @@
         <ul class="form-fields">
           <li>
             <label for="custom-name">Ваше имя:</label>
-            <input class="input-value custom-name" type="text" name="custom-name" id="custom-name" placeholder="Имя Фамилия" required>
+            <input class="input-value custom-name" type="text" name="custom-name" id="custom-name" placeholder="Имя Фамилия" aria-label="Введите своё имя" required>
           </li>
           <li>
             <label for="custom-mail">Ваш email:</label>
-            <input class="input-value custom-mail" type="email" name="custom-mail" id="custom-mail" placeholder="email@example.com" required>
+            <input class="input-value custom-mail" type="email" name="custom-mail" id="custom-mail" placeholder="email@example.com" aria-label="Введите свой элетронный адрес" required>
           </li>
           <li class="message-field">
             <label for="custom-message">Текст в письме</label>
-            <textarea class="input-value custom-message" id="custom-message" name="message" placeholder="В свободной форме"></textarea>
+            <textarea class="input-value custom-message" id="custom-message" name="message" placeholder="В свободной форме" aria-label="Введите своё сообщение"></textarea>
           </li>
           <li><button class="send btn" type="submit" form="pop-up-form">Отправить</button></li>
         </ul>
@@ -248,7 +248,7 @@
     </form>
     <button class="close-btn" type="button" aria-label="закрыть"></button>
   </div>
-  <script src="js/min-pop-up.js"></script>
+  <script src="js/pop-up.js"></script>
 </body>
 
 </html>

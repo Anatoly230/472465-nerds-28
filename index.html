@@ -6,32 +6,32 @@
   <title>Передовой портал для выбора шаблона сайта. Нёрдс - выбери шаблон сайта для своего бизнеса</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
   <header class="page-header">
     <div class="main-header-wraper container">
       <a class="header-logo">
-        <img src="img/nerds-logo.png" width="160" height="66" alt="Логотип компании нёрдс">
+        <img src="img/nerds_logo.png" width="160" height="66" alt="Логотип компании нёрдс">
       </a>
       <nav class="page-nav">
         <ul class="page-menu">
           <li tabindex="0">
-            <a href="index.html">Студия</a>
+            <a href="#" aria-label="Пункт меню студия">Студия</a>
           </li>
           <li tabindex="0">
-            <a href="#">Клиенты</a>
+            <a href="#" aria-label="Пункт меню Клиенты">Клиенты</a>
           </li>
           <li tabindex="0">
-            <a href="catalog.html">Магазин</a>
+            <a href="catalog.html" aria-label="Пункт меню Магазин">Магазин</a>
           </li>
           <li tabindex="0">
-            <a href="#">Контакты</a>
+            <a href="#" aria-label="Пункт меню Контакты">Контакты</a>
           </li>
         </ul>
         <div class="user-navigation">
-          <a class="header-trash" href="#">Корзина</a>
+          <a class="header-trash" href="#" aria-label="Пункт меню Корзина">Корзина</a>
         </div>
       </nav>
     </div>
@@ -43,11 +43,11 @@
       <ul class="slider-wraper-list slider-wraper-1 container">
         <li class="slider-item current-slide">
           <dl class="slider-slogan">
-            <dt class="slogan-header ">Долго, дорого,<br>скрупулезно.</dt>
+            <dt class="slogan-header">Долго, дорого,<br>скрупулезно.</dt>
             <dd class="slogan-content">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.
             </dd>
           </dl>
-          <a class="slider-more btn" href="#">Узнать больше</a>
+          <a class="slider-more btn" href="#" aria-label="Перейти и узнать больше">Узнать больше</a>
         </li>
         <li class="slider-item">
           <dl class="slider-slogan">
@@ -55,7 +55,7 @@
             <dd class="slogan-content">Никакого креатива, только математические формулы<br>для расчета идеальных пропорций.
             </dd>
           </dl>
-          <a class="slider-more btn" href="#">Узнать больше</a>
+          <a class="slider-more btn" href="#" aria-label="Перейти и узнать больше">Узнать больше</a>
         </li>
         <li class="slider-item">
           <dl class="slider-slogan">
@@ -63,13 +63,13 @@
             <dd class="slogan-content">Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.
             </dd>
           </dl>
-          <a class="slider-more btn" href="#">Узнать больше</a>
+          <a class="slider-more btn" href="#" aria-label="Перейти и узнать больше">Узнать больше</a>
         </li>
         <li class="slide-controls-wraper">
           <div class="slide-controls-box">
-            <button class="slide-control" type="button" aria-label="first slide"><span class="slide-toggle  current"></span></button>
-            <button class="slide-control" type="button" aria-label="second slide"><span class="slide-toggle"></span></button>
-            <button class="slide-control" type="button" aria-label="first slide"><span class="slide-toggle"></span></button>
+            <button class="slide-control" type="button" aria-label="Первый слайд"><span class="slide-toggle  current"></span></button>
+            <button class="slide-control" type="button" aria-label="Второй слайд"><span class="slide-toggle"></span></button>
+            <button class="slide-control" type="button" aria-label="Третий слайд"><span class="slide-toggle"></span></button>
           </div>
         </li>
       </ul>
@@ -83,21 +83,21 @@
             <h3 class="main-services-header">Веб-сайты</h3>
             <p class="main-services-text">Мир никогда не будет прежним
               после того как увидит ваш сайт!</p>
-            <a class="buy webs btn " href="#">Заказать</a>
+            <a class="buy webs btn " href="#" aria-label="Заказать веб-сайт">Заказать</a>
           </li>
           <li class="services-item services-apps">
             <img src="img/services_2.png" width="300" height="146" alt="Изображение категории">
             <h3 class="main-services-header">Приложения</h3>
             <p class="main-services-text">Покорите топ-10 приложений в
               AppStore и Google Play!</p>
-            <a class="buy apps btn " href="#">Заказать</a>
+            <a class="buy apps btn " href="#" aria-label="Заказать приложение">Заказать</a>
           </li>
           <li class="services-item services-presentations">
             <img src="img/services_3.png" width="300" height="146" alt="Изображение категории">
             <h3 class="main-services-header">Презентации</h3>
             <p class="main-services-text">Вы даже не подозреваете,
               насколько вы изумительны!</p>
-            <a class="buy presentations btn" href="#">Заказать</a>
+            <a class="buy presentations btn" href="#" aria-label="Заказать презентацию">Заказать</a>
           </li>
         </ul>
       </section>
@@ -136,22 +136,23 @@
         <h2 class="visually-hidden">Партнёры нашей компании</h2>
         <ul class="partners-list">
           <li class="partners-item">
-            <a href="https://htmlacademy.ru/intensive/htmlcss" title="Пройди интенсив, по профессиональной верстке по  HTML/CSS">
+            <a href="https://htmlacademy.ru/intensive/htmlcss" title="Пройди интенсив, по профессиональной верстке по  HTML/CSS" aria-label="Перейти по ссылке на сайт html-academy">
               <img src="img/partners_1.png" width="199" height="68" alt="логотип html-academy">
             </a>
           </li>
           <li class="partners-item">
-            <a href="#">
+            <a href="#" aria-label="Перейти по ссылке на сайт Бородинский">
               <img src="img/partners_2.png" width="209" height="90" alt="логотип Бородинский">
             </a>
           </li>
           <li class="partners-item">
-            <a href="#">
+            <a href="#" aria-label="Перейти по ссылке на сайт Pink">
               <img src="img/partners_3.png" width="185" height="52" alt="логотип Pink">
             </a>
           </li>
           <li class="partners-item">
-            <a href="#"><img src="img/partners_4.png" width="173" height="84" alt="логотип Mishka">
+            <a href="#" aria-label="Перейти по ссылке на сайт Mishka">
+              <img src="img/partners_4.png" width="173" height="84" alt="логотип Mishka">
             </a>
           </li>
         </ul>
@@ -166,7 +167,7 @@
           <p class="feedback-header">NЁRDS DESIGN STUDIO</p>
           <p class="contacts-info">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 &nbsp;</p>
           <a class="contacts-number" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-          <a class="feedback-form-call btn" href="#">Напишите нам</a>
+          <a class="feedback-form-call btn" href="#" aria-label="Напишите нам письмо">Напишите нам</a>
         </div>
       </div>
     </div>
@@ -175,13 +176,13 @@
       <div class="social-wraper">
         <ul class="footer-social">
           <li class="social vk">
-            <a href="#"></a>
+            <a href="#" aria-label="Мы в социальной сети Вконтакте"></a>
           </li>
           <li class="social fb">
-            <a href="#"></a>
+            <a href="#" aria-label="Мы в социальной сети Facebook"></a>
           </li>
           <li class="social ig">
-            <a href="#"></a>
+            <a href="#" aria-label="Мы на фотолощадке в Instagram"></a>
           </li>
         </ul>
         <dl class="footer-info">
@@ -198,15 +199,15 @@
         <ul class="form-fields">
           <li>
             <label for="custom-name">Ваше имя:</label>
-            <input class="input-value custom-name" type="text" name="custom-name" id="custom-name" placeholder="Имя Фамилия" required>
+            <input class="input-value custom-name" type="text" name="custom-name" id="custom-name" placeholder="Имя Фамилия" aria-label="Введите своё имя" required>
           </li>
           <li>
             <label for="custom-mail">Ваш email:</label>
-            <input class="input-value custom-mail" type="email" name="custom-mail" id="custom-mail" placeholder="email@example.com" required>
+            <input class="input-value custom-mail" type="email" name="custom-mail" id="custom-mail" placeholder="email@example.com" aria-label="Введите свой элетронный адрес" required>
           </li>
           <li class="message-field">
             <label for="custom-message">Текст в письме</label>
-            <textarea class="input-value custom-message" id="custom-message" name="message" placeholder="В свободной форме"></textarea>
+            <textarea class="input-value custom-message" id="custom-message" name="message" placeholder="В свободной форме" aria-label="Введите своё сообщение"></textarea>
           </li>
           <li><button class="send btn" type="submit" form="pop-up-form">Отправить</button></li>
         </ul>

@@ -34,8 +34,9 @@ closePopUp.addEventListener("click", function (evt) {
 });
 
 messageForm.addEventListener("submit", function (evt) {
+  evt.preventDefault();
   if (!userName.value || !userMail.value || !userMessage.value) {
-    evt.preventDefault();
+evt.preventDefault();
     openPopUp.classList.remove("modal-error");
     openPopUp.offsetWidth = openPopUp.offsetWidth;
     openPopUp.classList.add("modal-error");
